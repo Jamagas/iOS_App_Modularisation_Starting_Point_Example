@@ -1,4 +1,4 @@
-# How to use ModuleCore
+# How to use Core
 
 ## Networking
 

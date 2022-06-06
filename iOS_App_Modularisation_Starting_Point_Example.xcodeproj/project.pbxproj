@@ -11,7 +11,36 @@
 		06F972B1284E02010065AE5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F972B0284E02010065AE5F /* ContentView.swift */; };
 		06F972B3284E02020065AE5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F972B2284E02020065AE5F /* Assets.xcassets */; };
 		06F972B6284E02020065AE5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F972B5284E02020065AE5F /* Preview Assets.xcassets */; };
+		06F97320284E07410065AE5F /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F97318284E072A0065AE5F /* Core.framework */; };
+		06F97321284E07410065AE5F /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06F97318284E072A0065AE5F /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06F97324284E07440065AE5F /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F97323284E07440065AE5F /* UIComponents.framework */; };
+		06F97325284E07440065AE5F /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06F97323284E07440065AE5F /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06F97317284E072A0065AE5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06F97313284E072A0065AE5F /* Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06F972C7284E02F70065AE5F;
+			remoteInfo = Core;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		06F97322284E07410065AE5F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				06F97325284E07440065AE5F /* UIComponents.framework in Embed Frameworks */,
+				06F97321284E07410065AE5F /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		06F972AB284E02010065AE5F /* iOS_App_Modularisation_Starting_Point_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_App_Modularisation_Starting_Point_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +48,9 @@
 		06F972B0284E02010065AE5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		06F972B2284E02020065AE5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06F972B5284E02020065AE5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06F97313284E072A0065AE5F /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = "<group>"; };
+		06F97319284E07350065AE5F /* UIComponents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIComponents.xcodeproj; path = UIComponents/UIComponents.xcodeproj; sourceTree = "<group>"; };
+		06F97323284E07440065AE5F /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F97324284E07440065AE5F /* UIComponents.framework in Frameworks */,
+				06F97320284E07410065AE5F /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +72,7 @@
 				06F972BC284E02DC0065AE5F /* Foundation */,
 				06F972AD284E02010065AE5F /* iOS_App_Modularisation_Starting_Point_Example */,
 				06F972AC284E02010065AE5F /* Products */,
+				06F9731F284E07410065AE5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +106,26 @@
 		06F972BC284E02DC0065AE5F /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				06F97313284E072A0065AE5F /* Core.xcodeproj */,
+				06F97319284E07350065AE5F /* UIComponents.xcodeproj */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		06F97314284E072A0065AE5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06F97318284E072A0065AE5F /* Core.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06F9731F284E07410065AE5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06F97323284E07440065AE5F /* UIComponents.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +138,7 @@
 				06F972A7284E02010065AE5F /* Sources */,
 				06F972A8284E02010065AE5F /* Frameworks */,
 				06F972A9284E02010065AE5F /* Resources */,
+				06F97322284E07410065AE5F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,12 +175,28 @@
 			mainGroup = 06F972A2284E02010065AE5F;
 			productRefGroup = 06F972AC284E02010065AE5F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 06F97314284E072A0065AE5F /* Products */;
+					ProjectRef = 06F97313284E072A0065AE5F /* Core.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				06F972AA284E02010065AE5F /* iOS_App_Modularisation_Starting_Point_Example */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		06F97318284E072A0065AE5F /* Core.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Core.framework;
+			remoteRef = 06F97317284E072A0065AE5F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		06F972A9284E02010065AE5F /* Resources */ = {

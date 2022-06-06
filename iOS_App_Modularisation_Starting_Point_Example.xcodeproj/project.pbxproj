@@ -15,6 +15,11 @@
 		06F97321284E07410065AE5F /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06F97318284E072A0065AE5F /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		06F97324284E07440065AE5F /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F97323284E07440065AE5F /* UIComponents.framework */; };
 		06F97325284E07440065AE5F /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06F97323284E07440065AE5F /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06F9732D284E07880065AE5F /* Core+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F97327284E07880065AE5F /* Core+Setup.swift */; };
+		06F9732E284E07880065AE5F /* AnalyticsTrackingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F97329284E07880065AE5F /* AnalyticsTrackingProvider.swift */; };
+		06F9732F284E07880065AE5F /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9732A284E07880065AE5F /* NetworkingProvider.swift */; };
+		06F97330284E07880065AE5F /* UIComponents+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9732B284E07880065AE5F /* UIComponents+Setup.swift */; };
+		06F97331284E07880065AE5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9732C284E07880065AE5F /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		06F97313284E072A0065AE5F /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = "<group>"; };
 		06F97319284E07350065AE5F /* UIComponents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIComponents.xcodeproj; path = UIComponents/UIComponents.xcodeproj; sourceTree = "<group>"; };
 		06F97323284E07440065AE5F /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06F97327284E07880065AE5F /* Core+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Core+Setup.swift"; sourceTree = "<group>"; };
+		06F97329284E07880065AE5F /* AnalyticsTrackingProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsTrackingProvider.swift; sourceTree = "<group>"; };
+		06F9732A284E07880065AE5F /* NetworkingProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
+		06F9732B284E07880065AE5F /* UIComponents+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIComponents+Setup.swift"; sourceTree = "<group>"; };
+		06F9732C284E07880065AE5F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,8 @@
 		06F972AD284E02010065AE5F /* iOS_App_Modularisation_Starting_Point_Example */ = {
 			isa = PBXGroup;
 			children = (
+				06F97326284E07880065AE5F /* Setup */,
+				06F9732C284E07880065AE5F /* AppDelegate.swift */,
 				06F972AE284E02010065AE5F /* iOS_App_Modularisation_Starting_Point_ExampleApp.swift */,
 				06F972B0284E02010065AE5F /* ContentView.swift */,
 				06F972B2284E02020065AE5F /* Assets.xcassets */,
@@ -126,6 +138,25 @@
 				06F97323284E07440065AE5F /* UIComponents.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06F97326284E07880065AE5F /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				06F97328284E07880065AE5F /* Providers */,
+				06F97327284E07880065AE5F /* Core+Setup.swift */,
+				06F9732B284E07880065AE5F /* UIComponents+Setup.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		06F97328284E07880065AE5F /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				06F97329284E07880065AE5F /* AnalyticsTrackingProvider.swift */,
+				06F9732A284E07880065AE5F /* NetworkingProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +246,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F9732E284E07880065AE5F /* AnalyticsTrackingProvider.swift in Sources */,
+				06F97330284E07880065AE5F /* UIComponents+Setup.swift in Sources */,
+				06F9732D284E07880065AE5F /* Core+Setup.swift in Sources */,
 				06F972B1284E02010065AE5F /* ContentView.swift in Sources */,
+				06F97331284E07880065AE5F /* AppDelegate.swift in Sources */,
+				06F9732F284E07880065AE5F /* NetworkingProvider.swift in Sources */,
 				06F972AF284E02010065AE5F /* iOS_App_Modularisation_Starting_Point_ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

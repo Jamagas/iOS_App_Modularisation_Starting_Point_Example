@@ -1,5 +1,5 @@
 import UIKit
-import ModuleCore
+import Core
 import UIComponents
 
 public class OnboardingViewController: UIViewController {

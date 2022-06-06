@@ -1,4 +1,4 @@
-import ModuleCore
+import Core
 
 struct RegisterUser: Requestable {
     let email: String

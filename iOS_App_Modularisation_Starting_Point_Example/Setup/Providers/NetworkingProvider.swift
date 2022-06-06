@@ -22,7 +22,7 @@ final class NetworkingProvider: Networking {
             case let .invalid(error):
                 result(.failure(error))
             }
-        }
+        }.resume()
     }
 }
 
